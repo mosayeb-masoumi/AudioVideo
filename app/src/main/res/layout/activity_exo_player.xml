@@ -2,6 +2,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:seekarc="http://schemas.android.com/tools"
     android:orientation="vertical">
 
     <com.potyvideo.library.AndExoPlayerView
@@ -60,6 +61,26 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/yellow"
             android:text="download mp3" />
+
+
+
+        <me.tankery.lib.circularseekbar.CircularSeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            app:cs_negative_enabled="true"
+            android:layout_marginTop="30dp"
+            app:cs_circle_style="square"
+            app:cs_disable_pointer = "true"
+            android:pointerIcon="no_drop"
+            app:cs_circle_color = "#E89898"
+            app:cs_circle_progress_color = "#4CAF50"
+            app:cs_circle_stroke_width="4dp"
+            app:cs_pointer_stroke_width="4dp"
+            app:cs_pointer_angle="0"/>
+
+
 
 
         <!--        <androidx.appcompat.widget.AppCompatButton-->
